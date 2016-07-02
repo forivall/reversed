@@ -1,6 +1,6 @@
 {
-  "name": "$NAME",
-  "description": "$DESCRIPTION",
+  "name": "reversed",
+  "description": "",
   "version": "0.0.0",
   "dependencies": {},
   "scripts": {
@@ -33,7 +33,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:forivall/$NAME.git"
+    "url": "git@github.com:forivall/reversed.git"
   },
   "babel": {
     "presets": ["es2015"]
