@@ -30,7 +30,7 @@ class ArrayLikeReversed {
 }
 
 export default function reversed(value) {
-  if (value.length) {
+  if ('length' in value) {
     return new ArrayLikeReversed(value);
   }
   throw new Error('Cannot reverse given object without length');
