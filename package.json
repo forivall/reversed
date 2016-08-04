@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "xo src/**",
     "build": "babel src -d lib",
+    "prepublish": "rimraf lib && npm run build",
     "dev-watch": "babel src -d lib -s -w",
     "inspect": "jsinspect",
     "posttest": "npm run lint && npm run inspect",
@@ -33,6 +34,7 @@
     "eslint-config-mxo": "^0.2.0",
     "jsinspect": "^0.8.0",
     "nyc": "^6.4.4",
+    "rimraf": "^2.5.4",
     "xo": "^0.16.0"
   },
   "repository": {
