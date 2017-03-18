@@ -35,7 +35,7 @@
     "jsinspect": "^0.8.0",
     "nyc": "^6.4.4",
     "rimraf": "^2.5.4",
-    "xo": "^0.16.0"
+    "xo": "^0.18.0"
   },
   "repository": {
     "type": "git",
