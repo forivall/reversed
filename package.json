@@ -9,7 +9,7 @@
     "url": "git@github.com:forivall/reversed.git"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "babel src -d lib --source-maps",
     "dev-watch": "babel src -d lib -s -w",
     "inspect": "if-node-version '>=6' jsinspect",
     "lint": "xo src/**",
