@@ -9,3 +9,5 @@ node_js:
   - 9
 before_script:
   - "npm run build"
+script:
+  - "npm run test-ci"
