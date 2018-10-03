@@ -5,7 +5,8 @@ export interface Reversed<T> {
   keys(): Iterator<T>
   values(): Iterator<T>
 }
-export class Array<T> implements Reversed<T> {
+
+declare class ArrayReversed<T> implements Reversed<T> {
   constructor(value: T[])
 
   [Symbol.iterator](): Iterator<T>
@@ -13,8 +14,8 @@ export class Array<T> implements Reversed<T> {
   keys(): Iterator<T>
   values(): Iterator<T>
 }
-export class ArrayLike<T> implements Reversed<T> {
-  constructor(value: {length: number})
+declare class ArrayLikeReversed<T> implements Reversed<T> {
+  constructor(value: ArrayLike<T>)
 
   [Symbol.iterator](): Iterator<T>
   entries(): Iterator<T>
@@ -22,6 +23,11 @@ export class ArrayLike<T> implements Reversed<T> {
   values(): Iterator<T>
 }
 
+export {
+  ArrayLikeReversed as ArrayLike,
+  ArrayReversed as Array
+}
+
 export default function reversed<T>(value: T[]): Reversed<T>
-export default function reversed<T>(value: {length: number}): Reversed<T>
+export default function reversed<T>(value: ArrayLike<T>): Reversed<T>
 export default function reversed(value: any): never
