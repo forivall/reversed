@@ -46,7 +46,7 @@
     "babel-cli": "^6.5.1",
     "babel-plugin-transform-runtime": "^6.9.0",
     "babel-preset-env": "^1.6.1",
-    "coveralls": "^3.0.0",
+    "coveralls": "^3.1.1",
     "eslint-config-mxo": "^0.5.4",
     "if-node-version": "^1.1.1",
     "jsinspect": "^0.12.7",
