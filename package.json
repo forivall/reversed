@@ -51,7 +51,7 @@
     "if-node-version": "^1.1.1",
     "jsinspect": "^0.12.7",
     "nyc": "^11.4.1",
-    "rimraf": "^2.5.4",
+    "rimraf": "^2.7.1",
     "xo": "^0.18.2"
   },
   "publishConfig": {
